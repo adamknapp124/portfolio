@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
 	return (
-		<section className="">
+		<section className="h-screen">
 			<div className="flex justify-evenly xl:flex-row flex-col-reverse">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.5 }}
@@ -29,8 +29,7 @@ const HeroSection = () => {
 						</span>
 					</h1>
 					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-						voluptatum.
+						Lorem ipsum dolor sit ame
 					</p>
 					<div className="">
 						<Link
@@ -52,7 +51,7 @@ const HeroSection = () => {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.5 }}
 					className="place-self-center mt-4 lg:mt-0">
-					<div className="rounded-full w-[250] h-[50]">
+					<div className="rounded-full w-[250] h-[50] mb-6 lg:mb-0">
 						<Image
 							src="/images/hero-image.png"
 							alt="hero image"
