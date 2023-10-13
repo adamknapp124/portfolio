@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
+import EmailSection from './components/EmailSection';
 import { Element } from 'react-scroll';
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
 			</Element>
 			<Element name="ProjectsSection">
 				<ProjectsSection />
+			</Element>
+			<Element name="EmailSection">
+				<EmailSection />
 			</Element>
 		</main>
 	);

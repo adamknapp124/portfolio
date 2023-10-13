@@ -29,8 +29,8 @@ const HeroSection = () => {
 						</span>
 					</h1>
 					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-						Lorem ipsum dolor sit ameLorem ipsum dolor sit ameLorem ipsum dolor
-						sit ame
+						I bring imaginative concepts to life through interactive digital
+						experiences.
 					</p>
 					<div className="">
 						<Link

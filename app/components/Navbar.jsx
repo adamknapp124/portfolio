@@ -5,9 +5,10 @@ import MenuOverlay from './MenuOverlay';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
-	{ title: 'Home', path: '/', component: 'HeroSection' },
+	{ title: 'Top', path: '/', component: 'HeroSection' },
 	{ title: 'About', path: '#about', component: 'AboutSection' },
 	{ title: 'Projects', path: '#projects', component: 'ProjectsSection' },
+	{ title: 'Email', path: '#Email', component: 'EmailSection' },
 ];
 
 const Navbar = () => {
