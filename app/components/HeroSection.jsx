@@ -29,7 +29,8 @@ const HeroSection = () => {
 						</span>
 					</h1>
 					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-						Lorem ipsum dolor sit ame
+						Lorem ipsum dolor sit ameLorem ipsum dolor sit ameLorem ipsum dolor
+						sit ame
 					</p>
 					<div className="">
 						<Link
@@ -51,7 +52,7 @@ const HeroSection = () => {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.5 }}
 					className="place-self-center mt-4 lg:mt-0">
-					<div className="rounded-full w-[250] h-[50] mb-6 lg:mb-0">
+					<div className="rounded-full w-[250] h-[50] mb-6 md:mb-0">
 						<Image
 							src="/images/hero-image.png"
 							alt="hero image"
