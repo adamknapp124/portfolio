@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import NavLink from './NavLink';
 import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import logo from '../../public/images/logo.png';
 
 const navLinks = [
 	{ title: 'Top', path: '/', component: 'HeroSection' },
@@ -20,7 +22,7 @@ const Navbar = () => {
 				<Link
 					href={'/'}
 					className="text-2xl md:text-5xl text-white font-semibold">
-					LOGO
+					<Image src={logo} alt="logo" width={50} height={50} />
 				</Link>
 				<div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (
