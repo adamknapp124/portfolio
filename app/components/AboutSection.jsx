@@ -87,7 +87,7 @@ const AboutSection = () => {
 							Experience
 						</TabButton>
 					</div>
-					<div className="mt-8 z-10">
+					<div className="mt-8 z-5">
 						{TAB_DATA.find((t) => t.id === tab).content}
 					</div>
 				</div>
