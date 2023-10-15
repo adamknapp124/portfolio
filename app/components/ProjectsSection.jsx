@@ -74,7 +74,7 @@ const ProjectsSection = () => {
 
 	return (
 		<>
-			<div className="">
+			<div className="h-screen">
 				<h2>My Projects</h2>
 				<div className="text-white flex flex-row justify-center items-center gap-2 my-6">
 					<ProjectTag
