@@ -74,7 +74,7 @@ const ProjectsSection = () => {
 
 	return (
 		<>
-			<div className="mb-1">
+			<div className="mt-96 mb-2">
 				<div className=" gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 					<h2>My Projects</h2>
 					<div className="text-white flex flex-row justify-center items-center gap-2 my-6">

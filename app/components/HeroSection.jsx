@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
 	return (
-		<section className="h-screen">
+		<section className="mb-2">
 			<div className="flex justify-evenly xl:flex-row flex-col-reverse">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.5 }}
