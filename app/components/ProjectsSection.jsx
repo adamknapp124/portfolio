@@ -74,36 +74,38 @@ const ProjectsSection = () => {
 
 	return (
 		<>
-			<div className="h-screen mb-1">
-				<h2>My Projects</h2>
-				<div className="text-white flex flex-row justify-center items-center gap-2 my-6">
-					<ProjectTag
-						onClick={handleTagChange}
-						name="All"
-						isSelected={tag === 'All'}
-					/>
-					<ProjectTag
-						onClick={handleTagChange}
-						name="Web"
-						isSelected={tag === 'Web'}
-					/>
-					<ProjectTag
-						onClick={handleTagChange}
-						name="Mobile"
-						isSelected={tag === 'Mobile'}
-					/>
-				</div>
-				<div className="grid md:grid-cols-3 gap-8 md:gap-12">
-					{filteredProjects.map((project) => (
-						<ProjectCard
-							key={project.id}
-							title={project.title}
-							description={project.description}
-							imgUrl={project.image}
-							gitUrl={project.gitUrl}
-							previewUrl={project.previewUrl}
+			<div className="mb-1">
+				<div className=" gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+					<h2>My Projects</h2>
+					<div className="text-white flex flex-row justify-center items-center gap-2 my-6">
+						<ProjectTag
+							onClick={handleTagChange}
+							name="All"
+							isSelected={tag === 'All'}
 						/>
-					))}
+						<ProjectTag
+							onClick={handleTagChange}
+							name="Web"
+							isSelected={tag === 'Web'}
+						/>
+						<ProjectTag
+							onClick={handleTagChange}
+							name="Mobile"
+							isSelected={tag === 'Mobile'}
+						/>
+					</div>
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+						{filteredProjects.map((project) => (
+							<ProjectCard
+								key={project.id}
+								title={project.title}
+								description={project.description}
+								imgUrl={project.image}
+								gitUrl={project.gitUrl}
+								previewUrl={project.previewUrl}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</>

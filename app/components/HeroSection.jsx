@@ -52,14 +52,15 @@ const HeroSection = () => {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.5 }}
 					className="place-self-center mt-4 lg:mt-0">
-					<div className="rounded-full w-[250] h-[50] mb-6 md:mb-0">
+					<div
+						className="rounded-full w-[250] h-[50] mb-6 md:mb-0"
+						style={{ width: '100%', height: '100%' }}>
 						<Image
 							src="/images/hero-image.png"
 							alt="hero image"
-							className=""
+							priority
 							width={400}
 							height={400}
-							priority
 						/>
 					</div>
 				</motion.div>
