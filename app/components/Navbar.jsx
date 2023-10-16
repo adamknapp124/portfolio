@@ -21,6 +21,7 @@ const Navbar = () => {
 			<div className="flex flex-wrap items-center justify-between mx-auto p-8">
 				<Link
 					href={'/'}
+					onClick={() => setNavbarOpen(false)}
 					className="text-2xl md:text-5xl text-white font-semibold">
 					<Image src={logo} alt="logo" width={50} height={50} />
 				</Link>
