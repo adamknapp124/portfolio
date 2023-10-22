@@ -22,7 +22,7 @@ const projectsData = [
 		image: '/images/orem-image.png',
 		tag: ['All', 'Web'],
 		gitUrl: 'https://gitlab.com/orem-web/mvp',
-		previewUrl: 'www.orem.tech',
+		previewUrl: 'https://www.orem.tech',
 	},
 	// {
 	// 	id: 3,
