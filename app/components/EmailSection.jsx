@@ -42,7 +42,7 @@ const EmailSection = () => {
 							type="email"
 							id="email"
 							className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-							placeholder="jacob@google.com"
+							placeholder="youremail@yourdomain.com"
 							required
 						/>
 					</div>
@@ -56,7 +56,7 @@ const EmailSection = () => {
 							type="text"
 							id="subject"
 							className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-							placeholder="Just saying hi"
+							placeholder="What's inside?"
 						/>
 					</div>
 					<div className="mb-6">
@@ -68,7 +68,7 @@ const EmailSection = () => {
 						<textarea
 							id="message"
 							className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-							placeholder="Let's talk about..."
+							placeholder="Compose your brilliance!"
 						/>
 					</div>
 					<div className="mb-6">
