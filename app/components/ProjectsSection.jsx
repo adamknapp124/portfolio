@@ -24,15 +24,16 @@ const projectsData = [
 		gitUrl: 'https://gitlab.com/orem-web/mvp',
 		previewUrl: 'https://www.orem.tech',
 	},
-	// {
-	// 	id: 3,
-	// 	title: 'E-commerce Application',
-	// 	description: 'Project 3 description',
-	// 	image: '/images/projects/3.png',
-	// 	tag: ['All', 'Web'],
-	// 	gitUrl: '/',
-	// 	previewUrl: '/',
-	// },
+	{
+		id: 3,
+		title: 'Real Time Messenger',
+		description:
+			'Messenger application built in Next.js, using next-auth, pusher, prisma, mongo db, and hosted on Vercel',
+		image: '/images/messenger-app.png',
+		tag: ['All', 'Web', 'Mobile'],
+		gitUrl: 'https://github.com/adamknapp124/messenger-app',
+		previewUrl: 'https://messenger-app-sigma.vercel.app/',
+	},
 	// {
 	// 	id: 4,
 	// 	title: 'Food Ordering Application',

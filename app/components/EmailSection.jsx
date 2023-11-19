@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const EmailSection = () => {
 	return (
-		<section className="grid md:grid-cols-2 mb-2 gap-4 relative ">
+		<section className="grid md:grid-cols-2 mb-2 gap-4 relative">
 			<div className="z-5">
 				<h5 className="text-xl font-bold text-white my-2">
 					Let&apos;s Connect
