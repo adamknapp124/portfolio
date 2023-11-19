@@ -7,6 +7,16 @@ import ProjectTag from './ProjectTag';
 const projectsData = [
 	{
 		id: 1,
+		title: 'Real Time Messenger',
+		description:
+			'Messenger application built in Next.js, using next-auth, pusher, prisma, mongo db, and hosted on Vercel',
+		image: '/images/messenger-app.png',
+		tag: ['All', 'Web', 'Mobile'],
+		gitUrl: 'https://github.com/adamknapp124/messenger-app',
+		previewUrl: 'https://messenger-app-sigma.vercel.app/',
+	},
+	{
+		id: 2,
 		title: 'Next.js Portfolio',
 		description:
 			'Portfolio website that showcases myself during my journey as a developer!',
@@ -16,23 +26,13 @@ const projectsData = [
 		previewUrl: 'https://portfolio-lilac-three-60.vercel.app/',
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Real-estate Website',
 		description: 'Website for Orem',
 		image: '/images/orem-image.png',
 		tag: ['All', 'Web'],
 		gitUrl: 'https://gitlab.com/orem-web/mvp',
 		previewUrl: 'https://www.orem.tech',
-	},
-	{
-		id: 3,
-		title: 'Real Time Messenger',
-		description:
-			'Messenger application built in Next.js, using next-auth, pusher, prisma, mongo db, and hosted on Vercel',
-		image: '/images/messenger-app.png',
-		tag: ['All', 'Web', 'Mobile'],
-		gitUrl: 'https://github.com/adamknapp124/messenger-app',
-		previewUrl: 'https://messenger-app-sigma.vercel.app/',
 	},
 	// {
 	// 	id: 4,
