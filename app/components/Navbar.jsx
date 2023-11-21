@@ -10,14 +10,14 @@ const navLinks = [
 	{ title: 'Top', path: '/', component: 'HeroSection' },
 	{ title: 'About', path: '#about', component: 'AboutSection' },
 	{ title: 'Projects', path: '#projects', component: 'ProjectsSection' },
-	{ title: 'Email', path: '#Email', component: 'EmailSection' },
+	{ title: 'Connect', path: '#Email', component: 'EmailSection' },
 ];
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212]">
+		<nav className="fixed top-0 left-0 right-0 z-10 bg-black">
 			<div className="flex flex-wrap items-center justify-between mx-auto p-8">
 				<Link
 					href={'/'}
@@ -40,7 +40,9 @@ const Navbar = () => {
 						</button>
 					)}
 				</div>
-				<div className="menu hidden md:block md:w-auto" id="navbar">
+				<div
+					className="menu hidden md:block md:w-auto cursor-pointer"
+					id="navbar">
 					<ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
 						{navLinks.map((link, index) => (
 							<li key={index}>
