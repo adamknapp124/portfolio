@@ -31,20 +31,44 @@ const EmailSection = () => {
 				</div>
 			</div>
 			<div>
-				<form>
-					<div className="mb-6">
-						<label
-							htmlFor="email"
-							className="block mb-2 text-sm font-medium text-white">
-							Your email
-						</label>
-						<input
-							type="email"
-							id="email"
-							className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-							placeholder="youremail@yourdomain.com"
-							required
-						/>
+				<form action="https://formsubmit.co/aknapp124@gmail.com" method="POST">
+					<input type="hidden" name="_captcha" value="false" />
+					<input
+						type="hidden"
+						name="_subject"
+						value="Someone cantacted you from your portfolio!"
+					/>
+					<div className="mb-6 flex flex-col lg:flex-row gap-4">
+						<div className="w-full">
+							<label
+								htmlFor="name"
+								className="block mb-2 text-sm font-medium text-white">
+								Name
+							</label>
+							<input
+								type="name"
+								name="name"
+								id="email"
+								className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+								placeholder="Enter your name."
+								required
+							/>
+						</div>
+						<div className="w-full">
+							<label
+								htmlFor="email"
+								className="block mb-2 text-sm font-medium text-white">
+								Your email
+							</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+								placeholder="Enter your email."
+								required
+							/>
+						</div>
 					</div>
 					<div className="mb-6">
 						<label
@@ -56,7 +80,7 @@ const EmailSection = () => {
 							type="text"
 							id="subject"
 							className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-							placeholder="What's inside?"
+							placeholder="What's on your mind?"
 						/>
 					</div>
 					<div className="mb-6">
@@ -67,16 +91,16 @@ const EmailSection = () => {
 						</label>
 						<textarea
 							id="message"
+							name="message"
 							className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-							placeholder="Compose your brilliance!"
+							placeholder="Please tell me it's a job!"
 						/>
 					</div>
 					<div className="mb-6">
 						<button
 							type="submit"
 							className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
-							{' '}
-							Send message{' '}
+							Send message
 						</button>
 					</div>
 				</form>
