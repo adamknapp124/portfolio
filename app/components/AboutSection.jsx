@@ -125,7 +125,7 @@ const AboutSection = () => {
 						<br></br>
 						<span className="box-border"></span>
 					</h1>
-					<p className="text-[#ADB7BE] ms:text-lg">
+					<p className="text-neutral-300 text-lg leading-6 font-semibold">
 						I bring to the table a solid foundation as a full-stack developer,
 						fueled by a genuine passion for creating engaging and responsive web
 						applications. I&apos;ve gained practical experience across a

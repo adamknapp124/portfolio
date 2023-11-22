@@ -36,7 +36,7 @@ const HeroSection = (section) => {
 							/>
 						</span>
 					</h1>
-					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+					<p className="text-neutral-300 text-lg leading-6 font-semibold mb-4">
 						I bring imaginative concepts to life through interactive digital
 						experiences.
 					</p>
