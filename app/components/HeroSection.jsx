@@ -3,9 +3,17 @@ import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from 'react-scroll';
 
-const HeroSection = () => {
+const HeroSection = (section) => {
+	const scrollToBottom = () => {
+		window.scrollTo({
+			top: document.body.scrollHeight,
+			behavior: 'smooth', // Adds a smooth scroll effect
+		});
+	};
+
 	return (
 		<section className="mb-96">
 			<div className="flex justify-evenly xl:flex-row flex-col-reverse">
@@ -33,18 +41,19 @@ const HeroSection = () => {
 						experiences.
 					</p>
 					<div className="">
-						<Link
-							href="/contact"
-							className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 to-blue-400 hover:scale-110 text-white">
-							Hire Me
-						</Link>
-						<Link
-							href="/"
+						<button
+							onClick={scrollToBottom}
+							className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 to-blue-400 hover:scale-110 text-white cursor-pointer font-semibold">
+							Connect with me
+						</button>
+						<a
+							href="/Adam_Knapp_Resume.pdf"
+							download="Adam_Knapp_Resume.pdf"
 							className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-blue-400 hover:scale-110 text-white mt-3">
 							<span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
 								Download CV
 							</span>
-						</Link>
+						</a>
 					</div>
 				</motion.div>
 				<motion.div

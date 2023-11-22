@@ -76,6 +76,14 @@ const ProjectsSection = () => {
 
 	return (
 		<>
+			<h1 className="text-white lg:leading-normal font-extrabold text-center">
+				<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400 text-5xl lg:text-7xl">
+					Projects
+				</span>
+				<br></br>
+				<span className="box-border"></span>
+			</h1>
+
 			<div className="mb-96">
 				<div className=" gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 					<h2>My Projects</h2>

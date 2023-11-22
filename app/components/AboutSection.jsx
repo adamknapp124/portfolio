@@ -8,8 +8,8 @@ const TAB_DATA = [
 		title: 'Skills',
 		id: 'skills',
 		content: (
-			<ul className="flex flex-col cursor-default">
-				<div className="flex items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+			<ul className="flex lg:flex-col flex-col cursor-default">
+				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">Frameworks:</li>
 					</div>
@@ -18,7 +18,7 @@ const TAB_DATA = [
 						<li>Vue.js</li>
 					</div>
 				</div>
-				<div className="flex items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">Languages:</li>
 					</div>
@@ -27,7 +27,7 @@ const TAB_DATA = [
 						<li>Python</li>
 					</div>
 				</div>
-				<div className="flex items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">Databases:</li>
 					</div>
@@ -37,7 +37,7 @@ const TAB_DATA = [
 						<li>MongoDb</li>
 					</div>
 				</div>
-				<div className="flex items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">Backend:</li>
 					</div>
@@ -47,7 +47,7 @@ const TAB_DATA = [
 						<li>Django</li>
 					</div>
 				</div>
-				<div className="flex items-center justify-between  lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0  items-center justify-between  lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">AWS:</li>
 					</div>
@@ -57,7 +57,7 @@ const TAB_DATA = [
 						<li>Amplify</li>
 					</div>
 				</div>
-				<div className="flex items-center justify-between lg:hover:border-b hover:text-neutral-100 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-100 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">Source Control:</li>
 					</div>
@@ -118,7 +118,13 @@ const AboutSection = () => {
 					className="w-full lg:w-auto mx-auto lg:mx-0 mb-5 lg:mb-0"
 				/>
 				<div className="mt-4 md:mt-0 text-left flex flex-col h-full lg:justify-center">
-					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+					<h1 className="text-white mb-4 lg:leading-normal font-extrabold">
+						<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400 text-4xl lg:text-7xl">
+							About Me
+						</span>
+						<br></br>
+						<span className="box-border"></span>
+					</h1>
 					<p className="text-[#ADB7BE] ms:text-lg">
 						I bring to the table a solid foundation as a full-stack developer,
 						fueled by a genuine passion for creating engaging and responsive web
