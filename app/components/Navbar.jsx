@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import NavLink from './NavLink';
 import MenuOverlay from './MenuOverlay';
@@ -15,9 +15,31 @@ const navLinks = [
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
+	const navRef = useRef();
+
+	useEffect(() => {
+		let handler = (e) => {
+			if (navRef.current && !navRef.current.contains(e.target)) {
+				setNavbarOpen(false);
+				console.log('navRef: ', navRef.current);
+			}
+		};
+		let handleResize = () => {
+			if (window.innerWidth > 768) {
+				setNavbarOpen(false);
+			}
+		};
+
+		document.addEventListener('mousedown', handler);
+		addEventListener('resize', handleResize);
+
+		return () => {
+			document.removeEventListener('mousedown', handler);
+		};
+	});
 
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10 bg-black">
+		<nav className="fixed top-0 left-0 right-0 z-10 bg-black" id="dropdown">
 			<div className="flex flex-wrap items-center justify-between mx-auto p-8">
 				<Link
 					href={'/'}
@@ -52,7 +74,21 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
-			{navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+			{navbarOpen ? (
+				<ul className="flex flex-col py-4 items-center z-15" ref={navRef}>
+					{navLinks.map((link, index) => (
+						<li
+							key={index}
+							className="cursor-pointer hover:bg-neutral-800 hover:font-semibold w-11/12 rounded-md text-center">
+							<NavLink
+								key={index}
+								section={link.component}
+								title={link.title}
+							/>
+						</li>
+					))}
+				</ul>
+			) : null}
 		</nav>
 	);
 };

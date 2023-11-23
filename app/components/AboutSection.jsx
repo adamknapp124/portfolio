@@ -9,11 +9,11 @@ const TAB_DATA = [
 		id: 'skills',
 		content: (
 			<ul className="flex lg:flex-col flex-col cursor-default">
-				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex flex-col gap-2 lg:gap-0 items-center justify-around lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
 					<div>
 						<li className="font-bold text-lg">Frameworks:</li>
 					</div>
-					<div className="flex w-fulljust gap-2 items-center font-semibold">
+					<div className="flex w-full gap-2 items-center font-semibold">
 						<li>React</li>
 						<li>Vue.js</li>
 					</div>
