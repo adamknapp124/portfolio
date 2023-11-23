@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const EmailSection = () => {
 	return (
-		<>
+		<div className="md:h-screen flex flex-col justify-center">
 			<h1 className="text-white mb-16 lg:leading-normal font-extrabold text-center">
 				<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400 text-6xl lg:text-7xl">
 					Send me a message
@@ -122,7 +122,7 @@ const EmailSection = () => {
 					</form>
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 

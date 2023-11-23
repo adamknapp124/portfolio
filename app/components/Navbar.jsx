@@ -16,6 +16,7 @@ const navLinks = [
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	const navRef = useRef();
+	const linkRef = useRef();
 
 	useEffect(() => {
 		let handler = (e) => {

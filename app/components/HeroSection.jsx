@@ -15,8 +15,8 @@ const HeroSection = (section) => {
 	};
 
 	return (
-		<section className="mb-96 mt-52">
-			<div className="flex justify-evenly xl:flex-row flex-col-reverse">
+		<section className="mb-96 mt-52 md:h-screen">
+			<div className="flex xl:flex-row flex-col-reverse">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.5 }}
 					animate={{ opacity: 1, scale: 1 }}
