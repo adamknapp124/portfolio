@@ -108,7 +108,7 @@ const AboutSection = () => {
 	};
 
 	return (
-		<section className="lg:text-neutral-400 text-neutral-200 overflow-hidden min-h-screen md:h-screen container">
+		<section className="lg:text-neutral-400 text-neutral-200 overflow-hidden mb-96 min-h-screen md:h-screen container">
 			<div className="lg:grid lg:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 xl:px-16">
 				<Image
 					src="/images/about-me-image.png"

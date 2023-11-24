@@ -15,7 +15,7 @@ const EmailSection = () => {
 				<br></br>
 				<span className="box-border"></span>
 			</h1>
-			<section className="grid lg:grid-cols-2 mb-2 gap-4 relative">
+			<section className="grid lg:grid-cols-2 mb-2 gap-4 relative mb-96">
 				<div className="z-5">
 					<h5 className="lg:text-3xl text-xl font-bold text-white my-2">
 						Let&apos;s Connect
