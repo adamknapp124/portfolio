@@ -75,7 +75,7 @@ const ProjectsSection = () => {
 	);
 
 	return (
-		<div className="md:h-screen">
+		<div className="md:h-screen container">
 			<h1 className="text-white lg:leading-normal font-extrabold text-center">
 				<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400 text-6xl lg:text-7xl">
 					Projects

@@ -9,16 +9,16 @@ const TAB_DATA = [
 		id: 'skills',
 		content: (
 			<ul className="flex lg:flex-col flex-col cursor-default">
-				<div className="flex flex-col gap-2 lg:gap-0 items-center justify-around lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0 items-center justify-between border-b-transparent hover:text-neutral-100">
 					<div>
 						<li className="font-bold text-lg">Frameworks:</li>
 					</div>
-					<div className="flex w-full gap-2 items-center font-semibold">
+					<div className="flex gap-2 items-center font-semibold">
 						<li>React</li>
 						<li>Vue.js</li>
 					</div>
 				</div>
-				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0 items-center justify-between border-b-transparent hover:text-neutral-100">
 					<div>
 						<li className="font-bold text-lg">Languages:</li>
 					</div>
@@ -27,7 +27,7 @@ const TAB_DATA = [
 						<li>Python</li>
 					</div>
 				</div>
-				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0 items-center justify-between border-b-transparent hover:text-neutral-100">
 					<div>
 						<li className="font-bold text-lg">Databases:</li>
 					</div>
@@ -37,7 +37,7 @@ const TAB_DATA = [
 						<li>MongoDb</li>
 					</div>
 				</div>
-				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0 items-center justify-between border-b-transparent hover:text-neutral-100">
 					<div>
 						<li className="font-bold text-lg">Backend:</li>
 					</div>
@@ -47,7 +47,7 @@ const TAB_DATA = [
 						<li>Django</li>
 					</div>
 				</div>
-				<div className="flex gap-2 lg:gap-0  items-center justify-between  lg:hover:border-b hover:text-neutral-200 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0 items-center justify-between border-b-transparent hover:text-neutral-100">
 					<div>
 						<li className="font-bold text-lg">AWS:</li>
 					</div>
@@ -57,7 +57,7 @@ const TAB_DATA = [
 						<li>Amplify</li>
 					</div>
 				</div>
-				<div className="flex gap-2 lg:gap-0  items-center justify-between lg:hover:border-b hover:text-neutral-100 lg:border-purple-500">
+				<div className="flex gap-2 lg:gap-0 items-center justify-between border-b-transparent hover:text-neutral-100">
 					<div>
 						<li className="font-bold text-lg">Source Control:</li>
 					</div>
@@ -108,7 +108,7 @@ const AboutSection = () => {
 	};
 
 	return (
-		<section className="lg:text-neutral-400 text-neutral-200 mb-96 overflow-hidden md:h-screen">
+		<section className="lg:text-neutral-400 text-neutral-200 mb-96 overflow-hidden md:h-screen container">
 			<div className="lg:grid lg:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 				<Image
 					src="/images/about-me-image.png"
