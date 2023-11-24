@@ -15,7 +15,7 @@ const HeroSection = (section) => {
 	};
 
 	return (
-		<section className="mb-96 mt-52 md:h-screen">
+		<section className="md:mt-52 min-h-screen">
 			<div className="flex xl:flex-row flex-col-reverse">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.5 }}

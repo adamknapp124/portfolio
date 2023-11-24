@@ -84,7 +84,7 @@ const ProjectsSection = () => {
 				<span className="box-border"></span>
 			</h1>
 
-			<div className="mb-96">
+			<div className="min-h-screen">
 				<div className=" gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 					<div className="text-white flex flex-row justify-center items-center gap-2 my-6">
 						<ProjectTag

@@ -10,7 +10,7 @@ import { Element } from 'react-scroll';
 
 export default function Home() {
 	return (
-		<main className="mt-24 flex min-h-screen flex-col items-center hero-background mx-auto px-12 py-12">
+		<main className="md:mt-24 flex min-h-screen flex-col items-center hero-background mx-auto px-12 py-12">
 			<Navbar />
 			<Element name="HeroSection">
 				<HeroSection />
